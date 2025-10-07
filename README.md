@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Journey</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Us | Love Incorporated ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7a7a;
+    }
+
+    .hero {
+      height: 85vh;
+      background: url('https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?auto=format&fit=crop&w=1500&q=80') center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      z-index: 1;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #ff7a7a;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      z-index: 1;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff4b4b;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Our Journey</h1>
+    <h1>Love Incorporated</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Our Story</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="container">
-    <h2>Our Love Story</h2>
-    <p>This is the landing page. A warm welcome and maybe a hero photo here.</p>
-  </div>
+
+  <section class="hero">
+    <h2>Built on Love, Growth & Laughter</h2>
+    <p>Welcome to our space — where professionalism meets passion, and our story becomes something beautiful.</p>
+    <button class="btn">Explore Our Story</button>
+  </section>
+
+  <footer>
+    © 2025 Love Incorporated | Designed with ❤️ by You
+  </footer>
 </body>
 </html>
